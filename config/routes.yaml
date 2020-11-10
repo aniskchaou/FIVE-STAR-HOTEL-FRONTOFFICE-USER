@@ -1,0 +1,30 @@
+# This file is the entry point to configure your own HTTP routes.
+# Files in the routes/ subdirectory configure the routes for your dependencies.
+
+index:
+   path: /
+   defaults: { _controller: 'App\Controller\HomeController::index' }
+
+service:
+   path: /services
+   defaults: { _controller: 'App\Controller\ServiceController::index' }
+
+gallery:
+   path: /gallery
+   defaults: { _controller: 'App\Controller\GalleryController::index' }
+
+restaurant:
+   path: /restaurant
+   defaults: { _controller: 'App\Controller\RestaurantController::index' }
+
+testinmonial:
+   path: /testinmonials
+   defaults: { _controller: 'App\Controller\TestimonialsController::index' }
+
+book:
+   path: /book
+   defaults: { _controller: 'App\Controller\BookController::index' }
+
+
+
+
